@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Royal Keepers</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- <meta property="og:image" content="path/to/image.jpg"> -->
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+	<!-- CSS Start -->
+	<link rel="stylesheet" href="css/main.min.css">
+	<!-- CSS End -->
+
+</head>
+
+<body>
+
+	<div id="page">
+		<div id="page__wrap">
+			<div id="page__main">
+
+				<header class="header _inner">
+					<div class="header__wrapper">
+						<div class="header__grid">
+
+							<div class="header__col">
+								<button class="header__toggle sandwich">
+									<span></span>
+									<span></span>
+									<span></span>
+								</button>
+								<div class="header__menu">
+									<ul class="menu">
+										<li><a href="/post.html">Home</a></li>
+										<li><a href="/post.html">Service</a></li>
+										<li><a href="/post.html">Top Companies</a></li>
+										<li><a href="/post.html">About</a></li>
+										<li><a href="/post.html">Contact us</a></li>
+										<li><a href="/post.html">For business</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="header__logo">
+								<a href="/" class="logo"><img src="img/logo.svg" alt=""></a>
+							</div>
+
+							<div class="header__col">
+								<!-- <div class="header__search">
+									<form class="search-form">
+										<input type="text" name="s" class="form-field" required>
+										<button class="search-form__btn ic ic-search"></button>
+									</form>
+								</div> -->
+								<a href="#" class="header__free _c-red">Free listing</a>
+								<div class="header__log">
+									<ul class="log-menu">
+										<li><a href="/form.html">Login</a></li>
+										<li><a href="/form.html">Register</a></li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</header>
+
+				<section class="sect-m">
+					<div class="container">
+						<form class="form js-reg-form" enctype="multipart/form-data">
+							<div class="form-title">
+								<h1>Form of registration</h1>
+							</div>
+							<input type="text" name="company_name" class="form-field" placeholder="Company Name *" required>
+							<label class="form-file">
+								<input type="file" name="company_logo[]" accept="image/*" class="form-file__input" required>
+								<span class="form-file__box"><i class="ic ic-upload"></i><span class="form-file__files">Company
+										Logo *</span></span>
+							</label>
+							<label class="form-file">
+								<input type="file" name="company_pictures[]" multiple accept="image/*" class="form-file__input">
+								<span class="form-file__box"><i class="ic ic-upload"></i><span class="form-file__files">Projects
+										/ company photos</span></span>
+							</label>
+							<textarea name="company_info" class="form-field" placeholder="Company Info *" required></textarea>
+							<div class="form-grid">
+								<div class="form-grid__col">
+									<select name="services-1[]" data-placeholder="Services provided 1 *" multiple
+										required></select>
+								</div>
+								<div class="form-grid__col">
+									<select name="services-2[]" data-placeholder="Services provided 2 *" multiple
+										required></select>
+								</div>
+							</div>
+							<select name="cities[]" data-placeholder="Cities it operates in *" multiple required>
+								<option>Bath</option>
+								<option>Birmingham</option>
+								<option>Bradford</option>
+								<option>Brighton & Hove</option>
+								<option>Bristol</option>
+								<option>Cambridge</option>
+								<option>Canterbury</option>
+								<option>Carlisle</option>
+								<option>Chelmsford</option>
+								<option>Chester</option>
+								<option>Chichester</option>
+								<option>Coventry</option>
+								<option>Derby</option>
+								<option>Durham</option>
+								<option>Ely</option>
+								<option>Exeter</option>
+								<option>Gloucester</option>
+								<option>Hereford</option>
+								<option>Kingston-upon-Hull</option>
+								<option>Lancaster</option>
+								<option>Leeds</option>
+								<option>Leicester</option>
+								<option>Lichfield</option>
+								<option>Lincoln</option>
+								<option>Liverpool</option>
+								<option>(City of) London</option>
+								<option>Manchester</option>
+								<option>Newcastle-upon-Tyne</option>
+								<option>Norwich</option>
+								<option>Nottingham</option>
+								<option>Oxford</option>
+								<option>Peterborough</option>
+								<option>Plymouth</option>
+								<option>Portsmouth</option>
+								<option>Preston</option>
+								<option>Ripon</option>
+								<option>Salford</option>
+								<option>Salisbury</option>
+								<option>Sheffield</option>
+								<option>Southampton</option>
+								<option>St Albans</option>
+								<option>Stoke-on-Trent</option>
+								<option>Sunderland</option>
+								<option>Truro</option>
+								<option>Wakefield</option>
+								<option>Wells</option>
+								<option>(City of) Westminster</option>
+								<option>Winchester</option>
+								<option>Wolverhampton</option>
+								<option>Worcester</option>
+								<option>York</option>
+							</select>
+							<input type="email" name="email" class="form-field" placeholder="Contact e-mail">
+							<input type="text" name="phone" class="form-field" placeholder="Phone number">
+							<input type="text" name="website" class="form-field" placeholder="Website">
+							<input type="email" name="main-email" class="form-field" placeholder="E-mail *" required>
+							<input type="password" name="pass" class="form-field" placeholder="Password *" required>
+							<input type="password" name="pass-2" class="form-field" placeholder="Password confirmation *"
+								required>
+							<div class="form-option">
+								<label>
+									<input type="checkbox" name="policy" required>
+									<span>I have read and agree to the <a href="http://royalkeepers.co.uk/terms.html"
+											target="blank_">Terms & Conditions</a> and <a
+											href="http://royalkeepers.co.uk/privacy.html" target="blank_">Privacy Policy</a></span>
+								</label>
+							</div>
+							<button class="btn">Register</button>
+						</form>
+					</div>
+				</section>
+
+			</div><!-- #page__main -->
+
+			<footer class="footer">
+				<div class="container">
+					<div class="footer__grid">
+
+						<div class="footer__copy">© 2021 ROYAL KEEPERS</div>
+
+						<div class="footer__menu">
+							<ul>
+								<li><a href="/post.html" class="_c-red">For business</a></li>
+								<li><a href="/terms.html">Terms & Conditions</a></li>
+								<li><a href="/privacy.html">Privacy policy</a></li>
+								<li><a href="/post.html">Sitemap</a></li>
+							</ul>
+						</div>
+
+						<div class="footer__social social">
+							<p class="social__head">Follow us</p>
+							<div class="social__grid">
+								<a href="#" class="social-item ic ic-instagram"></a>
+								<a href="#" class="social-item ic ic-twitter"></a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</footer>
+
+		</div><!-- #page__wrap -->
+	</div><!-- #page -->
+
+	<div class="hidden"></div>
+
+	<!-- JS Start -->
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+	<!-- JS End -->
+
+</body>
+
+</html>

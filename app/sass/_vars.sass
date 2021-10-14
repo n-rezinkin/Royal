@@ -1,0 +1,18 @@
+@import "bourbon"
+
+$font-1: "Avenir", sans-serif
+$font-2: "ChronicleDisplay", serif
+
+$c-1: #9A231A
+$c-2: #e7ce76
+
+@mixin bg($bg-url, $bg-pos:center, $bg-c:null)
+	background: $bg-c url($bg-url) $bg-pos
+	background-size: cover
+
+@mixin ic($lh:1)
+	font-family: 'icomoon'
+	text-transform: none
+	font-weight: normal
+	font-style: normal
+	line-height: $lh
