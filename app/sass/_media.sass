@@ -6,6 +6,11 @@
 	.container
 		width: 1030px
 
+	.acc__main .container
+		width: 1035px
+		margin: 0
+		margin-left: 20px
+
 	body
 		font-size: 14px
 
@@ -356,15 +361,16 @@
 		padding: 35px 35px 35px 80px
 
 	.acc__aside
-		padding: 60px 75px 60px 20px
-		margin-left: -200px
+		padding: 60px 20px 60px 20px
+		// margin-left: -200px
+		max-width: 200px
 		transition: .5s
 		&._show
 			transform: translateX(200px)
 		&-id
 			font-size: 14px
 	.acc__aside-toggle
-		display: block
+		// display: block
 	.acc__aside-item
 		margin-bottom: 60px
 	.acc__aside-menu
@@ -461,9 +467,56 @@
 		&__company
 			padding: 130px 190px
 			margin-left: 52px
+
+@media only screen and (max-width: 1260px)
+	.acc__main .container
+		width: 770px
+		margin: 0
+		margin-left: 35px
+
+	.subs__col
+		padding: 10px 5px
+	.sub-item
+		padding: 30px 10px
+		&__price
+			font-size: 50px
+		&__head
+			padding-top: 25px
+
 @media only screen and (max-width : 1039px)
 	.container
 		width: 750px
+
+	.acc__main .container
+		margin-left: 0
+	.subs__col
+		padding: 15px 15px
+	.sub-item
+		padding: 30px 10px
+		&__price
+			font-size: 50px
+		&__head
+			padding-top: 25px
+
+	.acc__aside
+		padding: 60px 75px 60px 20px
+		margin-left: -200px
+		transition: .5s
+		max-width: 260px
+		&._show
+			transform: translateX(200px)
+		&-id
+			font-size: 14px
+	.acc__aside-toggle
+		display: block
+	.acc__aside-item
+		margin-bottom: 60px
+	.acc__aside-menu
+		font-size: 18px
+	.acc__aside-menu._small
+		font-size: 1em
+		li
+			margin-bottom: 10px
 
 	h1
 		font-size: 34px
@@ -510,7 +563,6 @@
 
 	.header__log
 		margin-left: 25px
-
 	.header__menu
 		position: absolute
 		z-index: 10
