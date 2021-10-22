@@ -1577,6 +1577,12 @@ textarea.form-field
 		color: #FFFCF3
 		a:not(.btn):hover
 			color: inherit
+		&-id
+
+			letter-spacing: .06em
+			font-weight: 500
+			font-size: 16px
+			padding-bottom: 10px
 		&-toggle
 			display: none
 			position: absolute
@@ -1823,6 +1829,26 @@ textarea.form-field
 	&__title
 		margin-bottom: 40px
 		margin-top: 100px
+	.free-sub
+		margin-top: 0px
+		margin-bottom: 30px
+		padding-left: 58px
+		justify-content: space-between
+		&__head
+			margin-right: 30px
+		&__subhead
+			font-size: 18px
+		&__left
+			display: flex
+		&__right
+			display: flex
+			align-items: center
+		&::before
+			width: 0
+			height: 0
+		&__expire-date
+			font-weight: 500
+			color: #a65c4e
 
 .sub-form
 	background: rgba(255, 249, 233, 0.96)
@@ -2238,6 +2264,40 @@ textarea.form-field
 		&-btn
 			height: 85px
 			margin-left: 41px
+
+.rating-area
+	overflow: hidden
+	width: 265px
+
+	&:not(:checked) > input
+		display: none
+	&:not(:checked) > label
+		float: right
+		width: 42px
+		padding: 0
+		cursor: pointer
+		font-size: 32px
+		line-height: 32px
+		color: lightgrey
+		text-shadow: 1px 1px #bbb
+	&:not(:checked) > label:before
+		content: '★'
+	& > input:checked ~ label
+		color: gold
+		text-shadow: 1px 1px #c60
+	&:not(:checked) > label:hover,
+	&:not(:checked) > label:hover ~ label
+		color: gold
+	& > input:checked + label:hover,
+	& > input:checked + label:hover ~ label,
+	& > input:checked ~ label:hover,
+	& > input:checked ~ label:hover ~ label,
+	& > label:hover ~ input:checked ~ label
+		color: gold
+		text-shadow: 1px 1px goldenrod
+
+.rate-area > label:active
+	position: relative
 
 .login-buttons
 	&__user

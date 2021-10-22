@@ -59,7 +59,8 @@
 										<button class="search-form__btn ic ic-search"></button>
 									</form>
 								</div> -->
-								<a href="#" class="header__bell ic ic-bell" data-tooltip="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident"><span></span></a>
+								<a href="#" class="header__bell ic ic-bell"
+									data-tooltip="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident"><span></span></a>
 								<div class="header__user">
 									<button class="header__user-toggle ic ic-user"></button>
 									<div class="header__user-wrap">
@@ -87,6 +88,7 @@
 						</button>
 						<div class="acc__aside-wrap">
 							<div class="acc__aside-item">
+								<p class="acc__aside-id">Account ID: 3545435</p>
 								<ul class="acc__aside-menu">
 									<li><a href="#">Company profile</a></li>
 									<li><a href="#">Messages</a></li>
@@ -148,6 +150,77 @@
 									</div>
 								</div>
 
+								<section class="sub-settings">
+
+									<div class="sub-settings__content">
+										<div class="sub-settings__title">
+											<h2 class="sub-settings__title-text">Subscribtion Settings</h2>
+										</div>
+										<div class="free-sub">
+											<div class="free-sub__left">
+												<p class="free-sub__head">Active Subscription</p>
+												<p class="free-sub__subhead">Subscrption 3</p>
+											</div>
+											<div class="free-sub__right">
+												<p class="free-sub__expire">Date expires: <span
+														class="free-sub__expire-date">31.12.2021</span> </p>
+												<!-- <div class="free-sub__sep"></div> -->
+												<div class="free-sub__action">
+													<a href="#" class="btn _small _yellow">Upgrade</a>
+													<a href="#" class="btn _small">Cancel</a>
+												</div>
+											</div>
+										</div>
+										<form class="sub-form">
+
+											<h3 class="sub-form__title sub-form__container">Massenger</h3>
+											<div class="sub-form__middle">
+												<div class="sub-form__container">
+													<p class="sub-form__item-title">Allow us to send you Quotation requests?</p>
+													<div class="sub-form__checkbox-area">
+														<input type="checkbox" id="quotation-yas" name="quotation" required="">
+														<label for="quatation-yas">Yas</label>
+														<input type="checkbox" id="quotation-no" iname="quotation" required="">
+														<label for="quatation-no">No</label>
+													</div>
+													<h3 class="sub-form__title">Other settings</h3>
+												</div>
+											</div>
+											<div class="sub-form__bottom">
+												<div class="sub-form__container">
+													<div class="sub-form__item">
+														<div class="sub-form__item-title">Displayed website address</div>
+														<input type="text" name="website" class="form-field" placeholder="">
+													</div>
+													<div class="sub-form__item">
+														<div class="sub-form__item-title">Displayed contact number</div>
+														<input type="text" name="contact" class="form-field" placeholder="">
+													</div>
+													<div class="sub-form__item">
+														<div class="sub-form__item-title">Displayed email address</div>
+														<input type="email" name="email" class="form-field" placeholder="">
+													</div>
+													<div class="sub-form__item">
+														<div class="sub-form__item-title">Promotion service page</div>
+														<p class="sub-form__item-title-descr">(Choose a service page where your
+															company
+															will
+															be
+															listed one of the first three)</p>
+														<select class="sub-form__item-select" name="service-page" id="service-page">
+															<option value="1">1</option>
+															<option value="2">2</option>
+														</select>
+													</div>
+													<button class="btn">Save settings</button>
+												</div>
+											</div>
+										</form>
+									</div>
+
+
+
+								</section>
 							</div>
 						</section>
 

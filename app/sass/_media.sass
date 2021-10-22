@@ -51,7 +51,7 @@
 		width: 200px
 
 	.inner-title
-		max-width: 900px
+		// max-width: 900px
 	.inner-title__wrap
 		max-width: 500px
 	.inner-title__head
@@ -345,8 +345,11 @@
 		width: 400px
 
 	.subs__col
-		flex: 0 0 33.33%
-		max-width: 33.33%
+		flex: 0 0 25%
+		max-width: 25%
+
+	.sub-item__head
+		font-size: 13px
 
 	.free-sub
 		margin-top: 60px
@@ -358,6 +361,8 @@
 		transition: .5s
 		&._show
 			transform: translateX(200px)
+		&-id
+			font-size: 14px
 	.acc__aside-toggle
 		display: block
 	.acc__aside-item
@@ -673,6 +678,9 @@
 		flex: 0 0 50%
 		max-width: 50%
 
+	.sub-item__head
+		font-size: 18px
+
 	.free-sub__head
 		margin-right: 30px
 
@@ -737,7 +745,10 @@
 		&__company
 			padding: 80px 140px
 			margin-left: 30px
-
+	.sub-settings
+		.free-sub
+			&__right
+				margin-top: 10px
 @media only screen and (max-width : 767px)
 	.container
 		width: 540px
@@ -939,6 +950,18 @@
 		&__company
 			padding: 30px 90px
 			margin-left: 20px
+
+	.sub-settings
+		.free-sub
+			&__head
+				width: auto
+			&__right
+				flex-direction: column
+				align-items: flex-start
+				margin-top: 0px
+			&__action
+				margin-left: 0
+				margin-top: 10px
 @media only screen and (max-width : 575px)
 	.container
 		width: 100%
@@ -1259,6 +1282,14 @@
 			padding: 50px 90px
 			margin-top: 30px
 			margin-left: 0
+
+	.sub-settings
+		.free-sub
+			background: 0 0
+			box-shadow: none
+			padding-left: 0
+			padding-right: 0
+			margin-bottom: 0
 
 /*==========  Mobile First Method  ==========*/
 
